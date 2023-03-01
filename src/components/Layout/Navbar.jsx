@@ -8,6 +8,7 @@ const Navbar = () => {
   const { products } = useSelector(store => store.cart)
   const { token } = useSelector(store => store.userInfo)
 
+  
   return (
     <nav className='navbar'>
         <Link className='navbar__name' to="/"><h2>e-commerce</h2></Link>
