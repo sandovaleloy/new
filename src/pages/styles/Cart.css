@@ -1,0 +1,33 @@
+.cart__div {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+
+.cart__container {
+    justify-content: center;
+    display: block;
+    align-items: center;
+    text-align: center;
+    background-color: var(--ultra-ligth-gray);
+}
+
+.hr {
+    border: 1px solid var(--light-gray);
+    margin: 0;
+}
+
+.cart__total {
+    color: var(--light-gray);
+}
+
+.cart__btn {
+    background-color: var(--primary);
+    border: none;
+    padding: 10px;
+    width: 130px;
+    color: white;
+    margin: 30px;
+    border-radius: 5px;
+    cursor: pointer;
+}

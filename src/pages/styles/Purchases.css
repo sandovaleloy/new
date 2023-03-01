@@ -1,0 +1,31 @@
+.purchases {
+    display: flex;
+    place-content: center;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    text-align: center;
+}
+
+.purchases__section {
+    display: flex;
+    place-content: center;
+    align-items: center;
+    gap: 10px;
+    margin: 0 30%;
+}
+
+.purchases__home {
+    text-decoration: none;
+    color: var(--dark-gray);
+    cursor: pointer;
+}
+
+.purchases__punto {
+    font-size: 12px;
+    color: var(--primary);
+}
+
+.purchases__title span {
+    color: var(--dark-gray);
+}
