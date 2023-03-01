@@ -2,7 +2,7 @@ import React from 'react'
 import { useDispatch } from 'react-redux'
 import { useNavigate } from 'react-router-dom'
 import { addProductCart } from '../../store/slices/cart.slice'
-import "./styles/ProductCard.css"
+import "./styles/productCard.css"
 
 const ProductCard = ({product}) => {
 
