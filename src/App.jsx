@@ -1,7 +1,7 @@
 import { Route, Routes } from 'react-router-dom'
 import { useDispatch, useSelector } from 'react-redux'
 import './App.css'
-import Navbar from './components/Layout/navbar'
+import Navbar from './components/Layout/Navbar'
 import ProtectedUserLogged from './components/App/ProtectedUserLogged'
 import Cart from './pages/Cart'
 import Home from './pages/Home'
