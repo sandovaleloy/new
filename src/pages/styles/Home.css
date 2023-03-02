@@ -16,15 +16,18 @@
 }
 
 .home__input {
-    font-size: 22px;
+    font-size: 15px;
     display: flex;
     border: 1px solid var(--light-gray);
     letter-spacing: .5px;
     width: 60%;
+    outline: none;
+    height: 30px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 .home__input::placeholder {
-    font-size: 13px;
+    font-size: 10px;
     color: var(--light-gray);
     margin-bottom: 5px;
     padding-left: 5px;
@@ -42,6 +45,11 @@
     cursor: pointer;
 }
 
+.home__btn:hover {
+    background-color: red;
+    transition: all 0.2s ease;
+}
+
 /* panel lateral */
 .ul {
     display: none;
@@ -54,10 +62,16 @@
     cursor: pointer;
     display: flex;
     flex-direction: row-reverse;
-    gap: 10px;
     align-items: center;
     padding: 5px;
     color: var(--light-gray);
+    justify-content: center;
+}
+
+.categories:hover {
+    background-color: red;
+    border-radius: 5px;
+    transition: all 0.2s ease;
 }
 
 .input {
@@ -73,6 +87,7 @@
     margin: 0 auto;
     background-color: var(--primary);
     border-radius: 5px;
+    width: 100px;
 }
 
 .container {
@@ -83,12 +98,16 @@
     place-content: center;
 }
 
+.icon {
+    font-size: 17px;
+}
+
 .icon:hover {
-    -webkit-transform: rotate(180deg);
+    -webkit-transform: rotate(360deg);
     transition: 2s ease;
 }
 
 .li:hover {
-    background-color: brown;
+    background-color: red;
     opacity: 1;
 }

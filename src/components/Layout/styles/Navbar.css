@@ -5,7 +5,7 @@
     padding: 10px 10px;
     position: sticky;
     top: 0;
-    background-color: var(--ultra-ligth-gray);
+    background-color: #ffd9f4;
     z-index: 2;
     border: 1px solid var(--light-gray);
 }
@@ -19,6 +19,12 @@
     font-size: 20px;
 }
 
+.navbar__name:hover {
+    transition: all 0.2s ease;
+    color: red;
+    font-size: 20px;
+}
+
 .navbar__containerLinks {
     display: flex;
     gap: 10px;
@@ -29,6 +35,11 @@
     font-size: 25px;
     padding: 5px;
     position: relative;
+}
+
+.navbar__link:hover {
+    color: gray;
+    transition: all 0.2s ease;
 }
 
 .navbar__link span {

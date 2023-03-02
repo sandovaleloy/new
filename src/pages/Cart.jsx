@@ -20,15 +20,15 @@ const Cart = () => {
   }, []);
 
   return (
-    <main className="main">
-      <section>
+    <main className="cart1">
+      <section className="">
         {
           products.map((product) => (
           <CartProduct key={product.id} product={product}/> ))
         }
       </section>
       <section className="cart__container">
-      <hr className="hr"/>
+        <hr className="hr"/>
         <div className="cart__div">
           <h3 className="cart__total">Total:</h3>
           <h3>$ {totalpriceCart}</h3>

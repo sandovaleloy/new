@@ -6,7 +6,7 @@
 }
 
 .login-logged__container {
-    background-color: white;
+    background-color: #ffd9f4;
     padding: 20px;
     border-radius: 10px;
     text-align: center;
@@ -39,7 +39,7 @@
 }
 
 .login-form__container {
-    background-color: white;
+    background-color: #ffd9f4;
     padding: 20px;
     border-radius: 10px;
     color: var(--dark-gray);
@@ -84,6 +84,7 @@
     outline: none;
     margin-top: 3px;
     font-size: 15px;
+    background-color: #d7f4fc;
 }
 
 .login-form__btn {

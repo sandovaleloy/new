@@ -1,7 +1,7 @@
 .cart {
     width: 50%;
-    display: grid;
     margin-top: 0px;
+    display: grid;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
@@ -16,6 +16,16 @@
     justify-content: center;
     margin: 20px auto;
     width: 150px;
+}
+
+.cart__img:hover {
+    transform: scale(2.5);
+    transition: all 400ms ease;
+}
+
+.trash:hover {
+    transition: all ease;
+    color: red;
 }
 
 .cart__container1 {
@@ -39,7 +49,7 @@
     border: 1px solid var(--light-gray);
     width: 40px;
     color: var(--dark-gray);
-    background-color: white;
+    background-color: #ffd9f4;
     text-align: center;
     height: 28px;
     cursor: pointer;
@@ -47,7 +57,7 @@
 
 .cart__container2-div {
     display: flex;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     padding: 5px;
     gap: 20px;
     justify-content: center;

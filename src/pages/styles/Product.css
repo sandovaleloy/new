@@ -69,6 +69,18 @@
     transform: translateY(-50%);
 }
 
+.product__btnRight:hover {
+    background-color: red;
+    border: 1px solid red;
+    transition: all 0.3s ease;
+}
+
+.product__btnLeft:hover {
+    background-color: red;
+    border: 1px solid red;
+    transition: all 0.3s ease;
+}
+
 .product__detail-brand {
     color: var(--gray);
     font-size: 20px;
@@ -115,6 +127,10 @@
     padding: 5px 10px;
 }
 
+.product__detail-counter:hover {
+    border: 1px solid #ffd9f4;
+}
+
 .product__detail-quantityTitle {
     color: var(--gray);
     font-weight: normal;
@@ -132,6 +148,12 @@
     gap: 10px;
     font-weight: bold;
     cursor: pointer;
+}
+
+.product__detail-btn:hover {
+    background-color: red;
+    transition: all 0.3s ease;
+    border: 1px solid red;
 }
 
 .product__detail-btn i {

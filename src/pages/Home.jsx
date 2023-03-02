@@ -63,7 +63,7 @@ const Home = () => {
           <div className="div">
             <h3>
               <label className="categories" htmlFor="activar">
-                <i className="icon bx bx-chevrons-up"></i>Categories
+                <h3 className="icon">Categories</h3>
               </label>
             </h3>
             <input className="input" type="checkbox" id="activar" />

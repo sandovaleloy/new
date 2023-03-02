@@ -46,7 +46,8 @@
 
 .purchases__number {
     width: 60px;
-    border: 1px solid var(--light-gray);
+    border: 1px solid #ffd9f4;
+    background-color: #ffd9f4;
     text-align: center;
     color: var(--text-gray);
     font-size: 15px;

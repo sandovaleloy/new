@@ -32,7 +32,8 @@ const CartProduct = ({product}) => {
   }
 
   return (
-    <article className="cart">
+    
+    <article className="cart"> 
       <div className="cart__img">
         <img src={product.product.images[0].url} alt="" />
       </div>
@@ -45,6 +46,7 @@ const CartProduct = ({product}) => {
           <button className="cart__container1-button" onClick={handleClikPlus}>+</button>
         </div>
       </section>
+      
       <section className="cart__container2">
         <i onClick={handleDeleteCartProduct} className='trash bx bx-trash'></i>
         <div className="cart__container2-div">

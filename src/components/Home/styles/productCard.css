@@ -4,6 +4,13 @@
     cursor: pointer;
 }
 
+.productCard:hover {
+    border: 1px solid #ffd9f4;
+    text-shadow: 0 0 15px #ffd9f4;
+    transition: all 0s ease;
+    border-radius: 5px;
+}
+
 .productCard__header {
     border-bottom: 1px solid var(--gray);
     place-content: center;
@@ -47,6 +54,9 @@
 .productCard__info {
     padding: 22px;
     position: relative;
+    background-color: white;
+    height: 100%;
+    border-radius: 10px;
 }
 
 .productCard__brand, .productCard__priceTitle {
@@ -80,4 +90,9 @@
     width: 50px;
     aspect-ratio: 1;
     cursor: pointer;
+}
+
+.productCard__btn:hover {
+    background-color: red;
+    transition: all 0.2s ease;
 }
