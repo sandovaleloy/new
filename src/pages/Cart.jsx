@@ -28,7 +28,7 @@ const Cart = () => {
         }
       </section>
       <section className="cart__container">
-        <hr className="hr"/>
+        {/* <hr className="hr"/> */}
         <div className="cart__div">
           <h3 className="cart__total">Total:</h3>
           <h3>$ {totalpriceCart}</h3>

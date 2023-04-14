@@ -10,15 +10,15 @@
     display: block;
     align-items: center;
     text-align: center;
-    background-color: #ffd9f4;
-    height: 100px;
+    background-color: white;
+    height: auto;
     place-content: center;
 }
 
-.hr {
+/* .hr {
     border: 1px solid var(--light-gray);
     margin: 0;
-}
+} */
 
 .cart__total {
     color: var(--text-gray);

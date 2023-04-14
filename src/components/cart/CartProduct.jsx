@@ -41,9 +41,9 @@ const CartProduct = ({product}) => {
         <h3 className="cart__container1-title">{product.product.title}</h3>
 
         <div className="cart__container1-btn">
-          <button className="cart__container1-button" onClick={handleClickLess}>-</button>
-          <h3 className="cart__container1-button">{product.quantity}</h3>
-          <button className="cart__container1-button" onClick={handleClikPlus}>+</button>
+          <button className="cart__container1-button menos" onClick={handleClickLess}>-</button>
+          <h3 className="cart__container1-button number">{product.quantity}</h3>
+          <button className="cart__container1-button mas" onClick={handleClikPlus}>+</button>
         </div>
       </section>
       

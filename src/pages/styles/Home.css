@@ -102,10 +102,10 @@
     font-size: 17px;
 }
 
-.icon:hover {
+/* .icon:hover {
     -webkit-transform: rotate(360deg);
     transition: 2s ease;
-}
+} */
 
 .li:hover {
     background-color: red;
