@@ -1,113 +1,164 @@
 .home__listProducts {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
-    justify-content: center;
-    grid-template-rows: auto;
-    gap: 40px;
-    padding: 20px;
-    max-width: 1200px;
-    margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
+  justify-content: center;
+  grid-template-rows: auto;
+  gap: 40px;
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .home__div {
-    display: flex;
-    margin: 40px auto;
-    place-content: center;
+  display: flex;
+  margin: 40px auto;
+  place-content: center;
 }
 
 .home__input {
-    font-size: 15px;
-    display: flex;
-    border: 1px solid var(--light-gray);
-    letter-spacing: .5px;
-    width: 60%;
-    outline: none;
-    height: 30px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 15px;
+  display: flex;
+  border: 1px solid var(--light-gray);
+  letter-spacing: 0.5px;
+  width: 60%;
+  outline: none;
+  height: 30px;
 }
 
 .home__input::placeholder {
-    font-size: 10px;
-    color: var(--light-gray);
-    margin-bottom: 5px;
-    padding-left: 5px;
-    font-size: 17px;
-    position: absolute;
-    top: 25%;
+  font-size: 10px;
+  color: var(--light-gray);
+  margin-bottom: 5px;
+  padding-left: 5px;
+  font-size: 17px;
+  position: absolute;
+  top: 25%;
 }
 
 .home__btn {
-    background-color: var(--primary);
-    color: white;
-    border: none;
-    font-size: 18px;
-    width: 50px;
-    cursor: pointer;
+  background-color: #002e30;
+  color: white;
+  border: none;
+  font-size: 18px;
+  width: 50px;
+  transition: all 0.2s ease;
+  cursor: pointer;
 }
 
 .home__btn:hover {
-    background-color: red;
-    transition: all 0.2s ease;
+  background-color: #034649;
+  transition: all 0.2s ease;
 }
 
-/* panel lateral */
-.ul {
-    display: none;
-    color: var(--light-gray);
-    text-align: center;
-    cursor: pointer;
-}
+/* .ul {
+  display: none;
+  background-color: #002e30;
+  color: white;
+  text-align: center;
+  text-transform: uppercase;
+  cursor: pointer;
+} */
 
 .categories {
-    cursor: pointer;
-    display: flex;
-    flex-direction: row-reverse;
-    align-items: center;
-    padding: 5px;
-    color: var(--light-gray);
-    justify-content: center;
+  cursor: pointer;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  padding: 5px;
+  color: var(--text-gray);
+  justify-content: center;
+  background-color: #002e30;
+  transition: all 0.2s ease;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
 .categories:hover {
-    background-color: red;
-    border-radius: 5px;
-    transition: all 0.2s ease;
+  color: var(--text-gray);
+  transition: all 0.2s ease;
 }
 
+.arrow {
+  transform: rotate(0deg);
+  transition: transform 0.3s ease;
+  font-size: 25px;
+  color: #e7e2e2;
+}
+
+.arrow:hover {
+  color: white;
+}
+
+.arrow.rotated {
+  transform: rotate(90deg);
+}
+
+.content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+  cursor: pointer;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.content.expanded {
+  max-height: 200px; /* Ajusta según la altura de tu contenido */
+}
 .input {
-    display: none;
+  transition: all 0.2s ease;
+  display: none;
 }
 
-.input:checked ~ .ul{
-    display: block;
+.input:checked ~ .ul {
+  transition: all 0.2s ease;
+  display: block;
 }
 
 .div {
-    position: absolute;
-    margin: 0 auto;
-    background-color: var(--primary);
-    border-radius: 5px;
-    width: 100px;
+  position: absolute;
+  margin: 0 auto;
+  background-color: #002e30;
+  width: 200px;
+  left: 0;
+  top: 70px;
+  transition: all 0.2s ease;
 }
 
 .container {
-    margin-bottom: 150px;
-    margin-top: -35px;
-    margin-left: 30px;
-    display: flex;
-    place-content: center;
+  margin-bottom: 150px;
+  margin-top: -35px;
+  margin-left: 30px;
+  display: flex;
+  place-content: center;
 }
 
 .icon {
-    font-size: 17px;
+  font-size: 17px;
+  color: #e7e2e2;
+  text-transform: uppercase;
 }
-
 .icon:hover {
-    -webkit-transform: rotate(360deg);
-    transition: 2s ease;
+  transition: all 0.2s ease;
+  color: white;
+}
+.li {
+  color: white;
+}
+.li:hover {
+  color: #e7e2e2;
+  transition: all 0.2s ease;
+  opacity: 1;
 }
 
-.li:hover {
-    background-color: red;
-    opacity: 1;
+@media (max-width: 550px) {
+  .div {
+    top: 55px;
+  }
+}
+@media (max-width: 353px) {
+  .div {
+    top: 80px;
+  }
 }

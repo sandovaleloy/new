@@ -9,6 +9,13 @@ const Home = () => {
   const [nameFilter, setNameFilter] = useState("");
   const [filterProducts, setFilterProducts] = useState([]);
   const [categoryFilter, setCategoryFilter] = useState(0);
+  const [isRotated, setIsRotated] = useState(false);
+  const [isExpanded, setIsExpanded] = useState(false);
+
+  const toggleArrow = () => {
+    setIsRotated(!isRotated);
+    setIsExpanded(!isExpanded);
+  };
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -62,15 +69,27 @@ const Home = () => {
         <div className="container">
           <div className="div">
             <h3>
-              <label className="categories" htmlFor="activar">
+              <label
+                className="categories"
+                htmlFor="activar"
+                onClick={toggleArrow}
+              >
+                <i
+                  className={`arrow bx bx-chevron-right ${
+                    isRotated ? "rotated" : ""
+                  }`}
+                ></i>
                 <h3 className="icon">Categories</h3>
               </label>
             </h3>
             <input className="input" type="checkbox" id="activar" />
-            <ul className="ul">
-              <li className="li" onClick={() => setCategoryFilter(0)}>All</li>
+            <ul className={`content ${isExpanded ? "expanded" : ""}`}>
+              <li className="li" onClick={() => setCategoryFilter(0)}>
+                All
+              </li>
               {categories.map((category) => (
-                <li className="li"
+                <li
+                  className="li"
                   onClick={() => setCategoryFilter(category.id)}
                   key={category.id}
                 >

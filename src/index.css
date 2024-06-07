@@ -11,15 +11,17 @@
 
 body {
   margin: 0;
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-family: "Yantramanav", sans-serif;
 }
 
 html {
-  box-sizing: border-box; 
-  font-family: 'Yantramanav', sans-serif;
+  box-sizing: border-box;
+  font-family: "Yantramanav", sans-serif;
 }
 
-*, *::after, *::before {
+*,
+*::after,
+*::before {
   box-sizing: inherit;
 }
 
@@ -27,7 +29,12 @@ img {
   max-width: 100%;
 }
 
-h1, h2, h3, h4, h5, h5 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h5 {
   margin: 0;
 }
 
