@@ -44,12 +44,39 @@
     justify-content: center;
 }
 
+.number {
+    font-size: 15px;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    padding-top: 3px;
+}
+
+.menos:hover {
+    background-color: red;
+    transition: all 0.5s ease;
+}
+
+.menos {
+    font-size: 20px;
+    padding-bottom: 2px;
+}
+
+.mas:hover {
+    background-color: red;
+    transition: all 0.5s ease;
+}
+
+.mas {
+    font-size: 20px;
+}
+
 .cart__container1-button {
-    font-size: 17px;
+    /* font-size: 17px; */
     border: 1px solid var(--light-gray);
     width: 40px;
-    color: var(--dark-gray);
-    background-color: #ffd9f4;
+    color: white;
+    background-color: var(--primary);
     text-align: center;
     height: 28px;
     cursor: pointer;

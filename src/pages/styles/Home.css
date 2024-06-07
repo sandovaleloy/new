@@ -139,6 +139,7 @@
   color: #e7e2e2;
   text-transform: uppercase;
 }
+
 .icon:hover {
   transition: all 0.2s ease;
   color: white;
@@ -151,6 +152,11 @@
   transition: all 0.2s ease;
   opacity: 1;
 }
+
+/* .icon:hover {
+    -webkit-transform: rotate(360deg);
+    transition: 2s ease;
+} */
 
 @media (max-width: 550px) {
   .div {

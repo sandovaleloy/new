@@ -12,7 +12,7 @@
     justify-content: center;
     margin: 10px auto;
     gap: 15px;
-    max-width: 95%;
+    max-width: 90%;
 }
 
 .purchases__title {
@@ -46,10 +46,9 @@
 
 .purchases__number {
     width: 60px;
-    border: 1px solid #ffd9f4;
-    background-color: #ffd9f4;
+    background-color: var(--primary);
     text-align: center;
-    color: var(--text-gray);
+    color: white;
     font-size: 15px;
 }
 

@@ -1,3 +1,4 @@
+/* <<<<<<< HEAD */
 .navbar {
   display: flex;
   align-items: center;
@@ -10,10 +11,34 @@
   border: 1px solid var(--light-gray);
   border: none;
 }
+/* ======= */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 10px;
+  position: sticky;
+  top: 0;
+  background-color: var(--primary);
+  z-index: 2;
+  border: 1px solid var(--light-gray);
+  /* >>>>>>> 3a8d292f6efeafe533ceec1746e838019230b9de */
+}
 
 .navbar__name,
 .navbar__link {
   text-decoration: none;
+}
+
+.menuH {
+  color: white;
+  background-color: var(--primary);
+  border: none;
+  font-size: 25px;
+  padding: 5px;
+  position: relative;
+  cursor: pointer;
+  display: none;
 }
 
 .navbar__name {
@@ -23,11 +48,21 @@
   font-size: 20px;
   text-transform: uppercase;
   transition: all 0.2s ease;
+  color: white;
+  font-size: 20px;
+}
+
+.menuH:hover {
+  color: var(--text-gray);
+  transition: all 0.2s ease;
 }
 
 .navbar__name:hover {
   transition: all 0.2s ease;
   color: white;
+  font-size: 20px;
+  transition: all 0.2s ease;
+  color: var(--text-gray);
   font-size: 20px;
 }
 
@@ -46,6 +81,15 @@
 
 .navbar__link:hover {
   color: white;
+  transition: all 0.2s ease;
+  color: white;
+  font-size: 25px;
+  padding: 5px;
+  position: relative;
+}
+
+.navbar__link:hover {
+  color: var(--text-gray);
   transition: all 0.2s ease;
 }
 
@@ -72,5 +116,46 @@
   .navbar__link {
     font-size: 30px;
     padding: 8px;
+  }
+}
+.navbar__link {
+  font-size: 30px;
+  padding: 8px;
+}
+
+@media screen and (max-width: 550px) {
+  .menuH {
+    display: flex;
+    right: -5px;
+  }
+
+  .navbar__link {
+    /* display: flex; */
+    flex-direction: column;
+    /* display: none; */
+  }
+
+  .navbar__link.active {
+    display: flex;
+  }
+
+  .navbar__containerLinks {
+    flex-direction: column;
+    position: fixed;
+    right: 1px;
+    top: 45px;
+    background-color: var(--primary);
+    /* gap: 10px; */
+    padding: 5px;
+    border-radius: 5px;
+    display: flex;
+    opacity: 0;
+    transform: translateY(10px all 1s ease);
+    transition: all 0.5s ease;
+  }
+
+  .navbar__containerLinks.active {
+    display: flex;
+    opacity: 1;
   }
 }
