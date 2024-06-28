@@ -154,26 +154,11 @@
   gap: 10px;
   font-weight: bold;
   cursor: pointer;
-  transition: all 0.5s ease;
-
-  outline: none;
   transition: all 0.3s ease;
-  /* transition: all 0.2s ease; */
 }
 
 .product__detail-btn:hover {
-<<<<<<< HEAD
   background-color: #034649;
-  outline: 0.5px solid #034649;
-  /* border-radius: 5px; */
-  /* box-sizing: border-box; */
-=======
-    background-color: red;
-    transition: all 0.3s ease;
-    border: 1px solid red;
-    border: transparent;
-    transition: all 0.5s ease;
->>>>>>> 3a8d292f6efeafe533ceec1746e838019230b9de
 }
 
 .product__detail-btn i {
@@ -187,7 +172,7 @@
 
 .product__titleSimilar {
   margin: 20px 0;
-  color: var(--primary);
+  color: black;
   font-size: 20px;
 }
 

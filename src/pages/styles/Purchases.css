@@ -1,36 +1,39 @@
 .purchases {
-    display: flex;
-    place-content: center;
-    align-items: center;
-    justify-content: center;
-    justify-items: center;
-    text-align: center;
+  display: flex;
+  place-content: center;
+  align-items: center;
+  justify-content: center;
+  justify-items: center;
+  text-align: center;
 }
 
 .purchases__section {
-    display: flex;
-    place-content: center;
-    align-items: center;
-    gap: 10px;
-    margin: 0 30%;
+  display: flex;
+  place-content: center;
+  align-items: center;
+  gap: 10px;
+  margin: 0 30%;
 }
 
 .purchases__home {
-    text-decoration: none;
-    color: var(--dark-gray);
-    cursor: pointer;
+  text-decoration: none;
+  color: var(--dark-gray);
+  cursor: pointer;
+  transition: transform 0.5s ease, color 0.5s ease;
+  display: inline-block;
 }
 
 .purchases__home:hover {
-    font-size: 20px;
-    color: black;
+  transform: scale(1.2) translateZ(0);
+  transform-origin: center;
+  color: black;
 }
 
 .purchases__punto {
-    font-size: 12px;
-    color: var(--primary);
+  font-size: 12px;
+  color: var(--primary);
 }
 
 .purchases__title span {
-    color: var(--dark-gray);
+  color: var(--dark-gray);
 }

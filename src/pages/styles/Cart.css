@@ -1,18 +1,18 @@
 .cart__div {
-    display: flex;
-    justify-content: center;
-    gap: 25px;
-    margin-top: 5px;
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  margin-top: 5px;
 }
 
 .cart__container {
-    justify-content: center;
-    display: block;
-    align-items: center;
-    text-align: center;
-    background-color: white;
-    height: auto;
-    place-content: center;
+  justify-content: center;
+  display: block;
+  align-items: center;
+  text-align: center;
+  background-color: white;
+  height: auto;
+  place-content: center;
 }
 
 /* .hr {
@@ -21,21 +21,22 @@
 } */
 
 .cart__total {
-    color: var(--text-gray);
+  color: var(--text-gray);
 }
 
 .cart__btn {
-    background-color: var(--primary);
-    border: none;
-    padding: 10px;
-    width: 130px;
-    color: white;
-    margin: 30px;
-    border-radius: 5px;
-    cursor: pointer;
+  background-color: #002e30;
+  transition: all 0.3s ease;
+  border: none;
+  padding: 10px;
+  width: 130px;
+  color: white;
+  margin: 30px;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
 .cart__btn:hover {
-    background-color: red;
-    transition: all ease;
+  background-color: #034649;
+  transition: all 0.3s ease;
 }
